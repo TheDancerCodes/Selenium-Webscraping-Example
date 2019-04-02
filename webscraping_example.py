@@ -30,7 +30,7 @@ except TimeoutException:
 # with selenium elements of the titles.
 
 # find_elements_by_xpath - Returns an array of selenium objects.
-titles_element = browser.find_elements_by_xpath("//a[@class='text-bold']")
+titles_element = browser.find_elements_by_xpath("//a[@class='text-bold flex-auto']")
 
 # List Comprehension to get the actual repo titles and not the selenium objects.
 titles = [x.text for x in titles_element]
